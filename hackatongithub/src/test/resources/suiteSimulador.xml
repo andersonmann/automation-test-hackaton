@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite CHROME" parallel="tests" thread-count="1"
+	configfailurepolicy="continue" verbose="10">
+	<listeners>
+		<listener class-name="util.TestListener" />
+	</listeners>
+
+	<test name="Tests simulator iPhone X">
+		<parameter name="platform" value="simulator" />
+		<parameter name="device" value="iPhone X" />
+		<classes>
+			<class name="test.HomeTest" />
+			<!-- <class name="test.OrderTest" /> -->
+		</classes>
+	</test>
+
+	<test name="Tests simulator Galaxy S9">
+	<parameter name="platform" value="simulator" />
+	<parameter name="device" value="Galaxy S9" />
+	<classes>
+		<class name="test.HomeTest" />
+	</classes>
+</test>
+
+	<test name="Tests simulator Pixel 2">
+		<parameter name="platform" value="simulator" />
+		<parameter name="device" value="Pixel 2" />
+		<classes>
+			<class name="test.HomeTest" />
+		</classes>
+	</test>
+
+	<test name="Tests simulator iPhone 6">
+		<parameter name="platform" value="simulator" />
+		<parameter name="device" value="iPhone 6" />
+		<classes>
+			<class name="test.HomeTest" />
+		</classes>
+	</test>
+
+	<test name="Tests simulator Moto Z2">
+		<parameter name="platform" value="simulator" />
+		<parameter name="device" value="Moto Z2" />
+		<classes>
+			<class name="test.HomeTest" />
+		</classes>
+	</test>
+
+	<test name="Tests simulator Moto G7">
+		<parameter name="platform" value="simulator" />
+		<parameter name="device" value="Moto G7" />
+		<classes>
+			<class name="test.HomeTest" />
+		</classes>
+	</test>
+</suite>
